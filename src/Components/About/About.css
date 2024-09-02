@@ -1,0 +1,45 @@
+/* About Section Styles */
+.about-section {
+    padding: 60px 20px;
+    background: linear-gradient(120deg, #ff9a9e 0%, #fad0c4 100%);
+    color: #1a0b0b;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .about-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-out;
+  }
+  
+  .about-section p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    margin: 10px 0;
+    animation: fadeIn 3s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .about-section h2 {
+      font-size: 2rem;
+    }
+  
+    .about-section p {
+      font-size: 1rem;
+    }
+  }
+  
