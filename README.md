@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+<div align="center">
+  <img src="./assets/banner.png" alt="Personal Website — my first portfolio build" width="100%" />
+</div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
 
-## Available Scripts
+![React](https://img.shields.io/badge/React-0A1024?style=flat-square&logo=react&logoColor=61DAFB)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-0A1024?style=flat-square&logo=bootstrap&logoColor=7952B3)
+![CSS3](https://img.shields.io/badge/CSS3-0A1024?style=flat-square&logo=css3&logoColor=1572B6)
+![Status](https://img.shields.io/badge/superseded-by_my__portfolio-7C4DFF?style=flat-square&labelColor=0A1024)
 
-In the project directory, you can run:
+</div>
 
-### `npm start`
+## Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+My **first portfolio build** — a single scrolling page with a hero, about section, skills, portfolio grid, résumé download and contact details.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Kept as a starting point, not as current work. The portfolio I maintain is **[my_portfolio](https://github.com/AJAY2043/my_portfolio)**, which replaced this one with a theme system, data-driven content and scroll animation.
 
-### `npm test`
+## Preview
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Personal website landing page](./assets/preview-home.jpg)
 
-### `npm run build`
+<sub>Screenshot captured from a local production build of this repository.</sub>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Single-page layout** — Hero, About, Portfolio, Skills and Contact with anchored navigation
+- **Résumé download** in the header
+- **Portfolio grid**
+- **Skills section**
+- **Responsive** across breakpoints
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Tech stack
 
-### `npm run eject`
+| Layer | Technology |
+|---|---|
+| Framework | React (Create React App) |
+| Styling | Bootstrap, React Bootstrap, component CSS |
+| Routing | None — single page with anchor navigation |
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Project structure
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+src/
+├── Components/
+│   ├── Navbar/, Hero/, About/, Skills/
+│   ├── Portfolio/, Contact/, Footer/
+│   └── Ajay_Assets/
+└── App.js
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Running locally
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+git clone https://github.com/AJAY2043/personal-website.git
+cd personal-website
+npm install
+npm start
+```
 
-## Learn More
+```bash
+npm run build     # production build into ./build
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## A note on the dependency list
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+`package.json` here declares a much larger stack than the project uses. **None** of these are imported anywhere in `src/`:
 
-### Code Splitting
+`@mui/material` · `@emotion/react` · `@emotion/styled` · `firebase` · `@reduxjs/toolkit` · `axios` · `@fortawesome/*`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The project actually runs on React plus Bootstrap. I am leaving the record here rather than quietly pruning it, because it is a useful reminder: installing a library is not the same as using one, and a `package.json` is read by anyone assessing the project.
 
-### Analyzing the Bundle Size
+## Future improvements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Prune the unused dependencies listed above
+- Wire the contact form to a delivery service
+- Add meta tags and an Open Graph image
+- See `my_portfolio` for where this went next
 
-### Making a Progressive Web App
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Ajay Krishna Reddy Bhavanam** — Melbourne, Australia
+[LinkedIn](https://linkedin.com/in/ajay-krishna-reddy) · [GitHub](https://github.com/AJAY2043)
